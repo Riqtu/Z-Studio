@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: rgba(255, 255, 255, 0.0);
+  }
+.menu{
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    z-index: 120;
+    top: 20px;
+    right: 30px;
+    display: grid;
+    justify-content: end;
+}
+.menu img{
+    width: 55px;
+    transition: 0.3s;
+}
+.menu img:hover{
+    transform: rotate(90deg)
+}
+
+.mleft{
+    position: fixed;
+    width: 33%;
+    height: 100%;
+    top:-100%;
+    background: white;
+    z-index: 101;
+}
+.mcenter{
+    position: fixed;
+    width: 33%;
+    left: 33%;
+    height: 100%;
+    top: 100%;
+    background: white;
+    z-index: 101;
+}
+.mright{
+    position: fixed;
+    width: 34%;
+    left: 66%;
+    height: 100%;
+    top: -100%;
+    background: white;
+    z-index: 101;
+}
+
+
+.novigation{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 121;
+    opacity: 0;
+    display: none;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+}
+.novigation h1{
+    font-size: 100pt;
+    font-weight: 700;
+    color:black;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.novigation h1:hover{
+    color:rgb(184, 62, 62);
+}
+.novigation__exit{
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    z-index: 120;
+    top: 20px;
+    right: 30px;
+    text-align: right;
+}
+.novigation__exit img{
+    width: 55px;
+    transition: 0.3s;
+}
+.novigation__exit img:hover{
+    transform: rotate(90deg)
+}
+.bar{
+    position: fixed;
+    width: 90px;
+    height: 100%;
+    background: rgb(41, 41, 41);
+    z-index: 100;
+}
+.bar__contacts{
+    position: absolute;
+    width: 90px;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: flex-end;
+    z-index: 100;
+}
+.bar__contacts img{
+    width: 40px;
+    margin: 3px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.bar__contacts img:hover{
+    opacity: 1;
+}
+.bar h1{
+    font-size: 35pt;
+    font-weight: 300;
+    color: white;
+    opacity: 0.5;
+}
+.bar__welcome{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    transform: rotate(270deg);
+    z-index: 121;
+}
+
+.welcome{
+    position: fixed;
+    width: 100%;
+    height: 150%;
+    background: rgb(184, 62, 62);
+    z-index: 99;
+}
+.welcome__hello{
+    position: absolute;
+    width: 50%;
+    left: 100px;
+    top: 200px;
+    font-size: 50pt;
+}
+.about{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(95, 62, 184);
+    opacity: 0;
+    z-index: 99;
+}
+.scroll{
+    position: absolute;
+    width: 100%;
+    height: 2000px;
+    z-index: 99;
+}
