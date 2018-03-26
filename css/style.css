@@ -3,14 +3,16 @@
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     color: white;
+    
 }
 ::-webkit-scrollbar {
     width: 0px;
     background: rgba(255, 255, 255, 0.0);
   }
 body{
-    background: rgb(41, 41, 41);
+    background: rgb(20, 20, 20);
     z-index: 2;
+
 }
 .menu{
     position: fixed;
@@ -38,6 +40,7 @@ body{
     top:-100%;
     background: white;
     z-index: 101;
+    display: none;
 }
 .mcenter{
     position: fixed;
@@ -47,6 +50,8 @@ body{
     top: 100%;
     background: white;
     z-index: 101;
+    display: none;
+    
 }
 .mright{
     position: fixed;
@@ -56,6 +61,8 @@ body{
     top: -100%;
     background: white;
     z-index: 101;
+    overflow: hidden;
+    display: none;
 }
 
 
@@ -141,7 +148,7 @@ body{
     color: white;
     opacity: 0.5;
 }
-.bar__welcome {
+.bar__welcome, .bar__about {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -154,40 +161,84 @@ body{
     transition: 0.3s;
 }
 .bar__about{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    transform: rotate(270deg);
-    z-index: 120;
     opacity: 0;
-    transition: 0.3s;
 }
 header{
     position: fixed;
     width: calc(100vw - 90px);
     left: 90px;
     height: 300px;
-    background: rgb(136, 136, 136);
+    background-image: url("../img/header2.png");
     z-index: 99;
+    background-position: center;
+    background-size:cover;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    
+    color: white;
+    font-size: 36pt;
 }
 .welcome{ 
-    position: relative;
+    position: fixed;
     width: calc(100vw - 90px);
     left: 90px;
     height: 540px;
     top: 300px;
-    background: rgb(184, 62, 62);
+    background: rgb(20, 20, 20);
     z-index: 99;
+    
+}
+.afterwelcome{
+    position: relative;
+    overflow: hidden;
+    width: calc(100vw - 90px);
+    left: 90px;
+    height: 300px;
+    z-index: 99;
+    top:700px;
+}
+.afterwelcome__cont{
+    position: relative;
+    
+    width: calc(100vw - 90px);
+    height: 300px;
+    top:200px;
+    left: 70px;
+    background: #EEEEEE;
+    transform: rotate(-15deg);
 }
 .about{
     position: relative;
     width: calc(100vw - 90px);
     left: 90px;
     height: 540px;
-    top: 300px;
-    background: rgb(62, 139, 184);
-    z-index: 99; 
+    background: #EEEEEE;
+    z-index: 100;
+    top: 600px;
+}
+.about__logo{
+    position: absolute;
+    color: black;
+    font-size: 36pt;
+    margin-left: 30px;
+    top: 20px;
+}
+.projects{
+    position: relative;
+    width: calc(100vw - 90px);
+    left: 90px;
+    height: 850px;
+    background: rgb(20, 20, 20);
+    z-index: 100;
+    top: 540px;
+}
+.projects__back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: end;
+    align-content: end; 
 }
