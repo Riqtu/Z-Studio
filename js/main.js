@@ -1,13 +1,15 @@
 $(document).ready(function(){
     $(window).scroll(function(){
         var bo = $(this).scrollTop();
-    if ( bo >= 800) {
+    if ( bo >= 850) {
         $(".bar__welcome").css('opacity','0')
         $(".bar__about").css('opacity','0')
+        $(".bar__projects").css('opacity','1')
     };
-    if ( bo >= 400 && bo<800) {
+    if ( bo >= 400 && bo<850) {
         $(".bar__welcome").css('opacity','0')
         $(".bar__about").css('opacity','1')
+        $(".bar__projects").css('opacity','0')
     };
     if ( bo < 400) {
         $(".bar__welcome").css('opacity','1')
