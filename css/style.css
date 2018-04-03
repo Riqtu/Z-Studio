@@ -16,7 +16,7 @@ body{
 }
 .menu{
     position: fixed;
-    width: 100%;
+    width: 50px;
     height: 40px;
     z-index: 120;
     top: 20px;
@@ -68,7 +68,8 @@ body{
 
 .novigation{
     position: fixed;
-    width: 100%;
+    width: calc(100vw - 90px);
+    left: 90px;
     height: 100%;
     z-index: 121;
     opacity: 0;
@@ -110,7 +111,7 @@ body{
     width: 90px;
     height: 100%;
     background: rgb(41, 41, 41);
-    z-index: 100;
+    z-index: 1000;
 }
 .bar__logo{
     position: fixed;
@@ -119,6 +120,9 @@ body{
     display: grid;
     justify-content: center;
     top:20px;
+    cursor: pointer;
+    z-index: 999;
+    
 }
 .bar__logo img{
     width: 50px;
@@ -147,6 +151,7 @@ body{
     font-weight: 300;
     color: white;
     opacity: 0.5;
+    transform: rotate(270deg);
 }
 .bar__welcome, .bar__about, .bar__projects {
     position: absolute;
@@ -155,7 +160,6 @@ body{
     display: grid;
     justify-content: center;
     align-content: center;
-    transform: rotate(270deg);
     z-index: 120;
     opacity: 1;
     transition: 0.3s;
@@ -174,7 +178,7 @@ body{
         position: absolute;
         top: 0;
         left: 0;
-        width: 103%;
+        width: 104%;
 }
 .welcome__overlay{
     position: fixed;
@@ -279,35 +283,34 @@ body{
 
 
 .projects{
+    z-index: 30;
     position: relative;
     width: calc(100vw - 90px);
     left: 90px;
     height: 100vh;
-    background: rgb(0, 0, 0);
+    background: rgb(24, 24, 24);
+    background-image: url('../img/projectback1.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
     z-index: 100;
-    top: 540px;
+    display: none;
+    opacity: 0;
 }
-.projects__back{
-    position: absolute;
-    width: 36.1%;
-    height: 100%;
-    display: grid;
-}
-.projects__back img{
-    width: 100%;
-}
+
 .projects__mainlogo{
     position: absolute;
-    left: 300px;
-    top:70px;
+    left: 10px;
+    top:30px;
     color:white;
     font-size: 80pt;
     font-weight: 700;
 }
 .projects__gallery{
     position: absolute;
-    left: 440px;
-    top:280px;
+    top: 240px;
+    left: 80px;
+
 }
 .projects__gallery h1{
     color:rgba(255, 255, 255, 0.582);
@@ -328,37 +331,38 @@ body{
 
 
 
-.projects__logo{
+.projects__logo, .projects__youtube, .projects__web{
     display: none;
     opacity: 0;
-    background: black;
+    background: rgb(24, 24, 24);
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 100;
     overflow: hidden;
 }
-.logo__exit{
+.logo__exit, .youtube__exit, .web__exit{
     position: absolute;
-    width: 100%;
-    height: 100px;
+    width: 100px;
+    left: calc(100vw - 230px);
+    height: 79px;
     display: grid;
-    justify-content: center;
+    z-index: 124;
+    justify-content: start;
     align-content: end;
 }
-.logo__exit h1{
+.logo__exit h1, .youtube__exit h1, .web__exit h1{
     color: white;
     font-size: 40pt;
     font-weight: 700;
     opacity: 0.6;
     cursor: pointer;
     transition:0.3s;
-    z-index: 1000;
 }
-.logo__exit h1:hover{
+.logo__exit h1:hover,.youtube__exit:hover, .web__exit:hover{
     opacity: 1;
 }
-.logo__all{
+.logo__all, .youtube__all, .web__all{
     overflow-y: auto;
     overflow-x: hidden;
     position: absolute;
@@ -379,7 +383,7 @@ body{
     opacity: 1;
 }
 
-.web__fullsize{
+.logo__fullsize, .youtube__fullsize, .web__fullsize{
     position: absolute;
     width: 70%;
     height: 100%;
@@ -392,151 +396,17 @@ body{
     background-position: center;
 }
 
-
-
-
-
-
-
-
-
-
-.projects__youtube{
-    display: none;
-    opacity: 0;
-    background: black;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    overflow: hidden;
-}
-.youtube__exit{
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    display: grid;
-    justify-content: center;
-    align-content: end;
-}
-.youtube__exit h1{
-    color: white;
-    font-size: 40pt;
-    font-weight: 700;
-    opacity: 0.6;
-    cursor: pointer;
-    transition:0.3s;
-    z-index: 1000;
-}
 .youtube__exit h1:hover{
     opacity: 1;
-}
-.youtube__all{
-    overflow-y: auto;
-    overflow-x: hidden;
-    position: absolute;
-    width: 30%;
-
-    height: 100vh;
-    text-align: center;
-    display: grid;
-    justify-content: center;
-}
-.all__items{
-}
-.all__items img{
-    width: 300px;
-    opacity: 0.8;
-}
-.all__items img:hover{
-    opacity: 1;
-}
-
-.youtube__fullsize{
-    position: absolute;
-    width: 70%;
-    height: 100%;
-    left: 30%;
-    text-align: center;
-    display: grid;
-    justify-content: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-
-
-
-
-
-
-
-
-.projects__web{
-    display: none;
-    opacity: 0;
-    background: black;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    overflow: hidden;
-}
-.web__exit{
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    display: grid;
-    justify-content: center;
-    align-content: end;
-}
-.web__exit h1{
-    color: white;
-    font-size: 40pt;
-    font-weight: 700;
-    opacity: 0.6;
-    cursor: pointer;
-    transition:0.3s;
-    z-index: 1000;
 }
 .web__exit h1:hover{
     opacity: 1;
 }
-.web__all{
-    overflow-y: auto;
-    overflow-x: hidden;
-    position: absolute;
-    width: 30%;
 
-    height: 100vh;
-    text-align: center;
-    display: grid;
-    justify-content: center;
-}
-.all__items{
-}
-.all__items img{
-    width: 300px;
-    opacity: 0.8;
-}
-.all__items img:hover{
-    opacity: 1;
-}
 
-.logo__fullsize{
-    position: absolute;
-    width: 70%;
-    height: 100%;
-    left: 30%;
-    text-align: center;
-    display: grid;
-    justify-content: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
+
+
 
 
 

@@ -1,24 +1,3 @@
-$(document).ready(function(){
-    $(window).scroll(function(){
-        var bo = $(this).scrollTop();
-    if ( bo >= 850) {
-        $(".bar__welcome").css('opacity','0')
-        $(".bar__about").css('opacity','0')
-        $(".bar__projects").css('opacity','1')
-    };
-    if ( bo >= 400 && bo<850) {
-        $(".bar__welcome").css('opacity','0')
-        $(".bar__about").css('opacity','1')
-        $(".bar__projects").css('opacity','0')
-    };
-    if ( bo < 400) {
-        $(".bar__welcome").css('opacity','1')
-        $(".bar__about").css('opacity','0')
-    };
-    })
-})
-function goToAbout(){
-}
 function menuon(){
     $(".menu img").animate({'opacity':'0'},300)
     setTimeout(() => {
@@ -52,6 +31,48 @@ function menuoff(){
     $(".mright").animate({'top':'-100%'},500)
 }
 
+
+
+function goToHome(){
+
+    $(".bar__welcome").css('opacity','1')
+    $(".bar__about").css('opacity','0')
+    $(".bar__projects").css('opacity','0')
+
+    $(".projects").animate({'opacity':'0'},500)
+    setTimeout(() => {
+        $(".projects").css("display","none");
+    }, 501);
+
+    $(".welcome").css("display","block");
+    setTimeout(() => {
+        $(".welcome").animate({'opacity':'1'},500)
+    }, 1);
+}
+
+
+
+
+function projectsOn(){
+
+    $(".bar__welcome").css('opacity','0')
+    $(".bar__about").css('opacity','0')
+    $(".bar__projects").css('opacity','1')
+
+    $(".welcome").animate({'opacity':'0'},500)
+    setTimeout(() => {
+        $(".welcome").css("display","none");
+    }, 501);
+
+    $(".projects").css("display","block");
+    setTimeout(() => {
+        $(".projects").animate({'opacity':'1'},500)
+    }, 1);
+
+}
+
+
+
 function logo(){
     $(".projects__logo").css("display","block");
     setTimeout(() => {
@@ -66,17 +87,22 @@ function logoExit(){
 }
 
 function logoItem1On(){
-    $(".logo__fullsize").css("background-image","url('img/item1.png')");
+    $(".logo__fullsize").css("background-image","url('logoitems/item1.png')");
 }
 function logoItem2On(){
-    $(".logo__fullsize").css("background-image","url('img/item2.png')");
+    $(".logo__fullsize").css("background-image","url('logoitems/item2.png')");
 }
 function logoItem3On(){
-    $(".logo__fullsize").css("background-image","url('img/item3.png')");
+    $(".logo__fullsize").css("background-image","url('logoitems/item3.png')");
 }
 function logoItem4On(){
-    $(".logo__fullsize").css("background-image","url('img/item4.png')");
+    $(".logo__fullsize").css("background-image","url('logoitems/item4.png')");
 }
+
+
+
+
+
 
 
 
@@ -105,6 +131,13 @@ function youtubeItem3On(){
 function youtubeItem4On(){
     $(".logo__fullsize").css("background-image","url('img/item4.png')");
 }
+
+
+
+
+
+
+
 
 
 function web(){

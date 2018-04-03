@@ -49,14 +49,14 @@
         <div class="novigation__exit">
             <img src="img/menu-button-off.svg" alt="" onclick="menuoff()">
         </div>
-        <h1>ГЛАВНАЯ</h1>
+        <h1 onclick="goToHome();menuoff()">ГЛАВНАЯ</h1>
         <h1 onclick="goToAbout()">О ПРОЕКТЕ</h1>
-        <h1>РАБОТЫ</h1>
+        <h1 onclick="projectsOn();menuoff()">РАБОТЫ</h1>
         <h1>КОНТАКТЫ</h1>
     </div>
     <div class="bar">
         <div class="bar__logo">
-            <img src="img/zlogo1.png" alt="">
+            <img src="img/zlogo1.png" onclick="goToHome();menuoff()">
         </div>
         <div class="bar__contacts">
             <img src="img/instagram.svg" alt="">
@@ -76,59 +76,46 @@
             <h1>Привет!</h1>
             <h2>Добро пожаловать на сайт-партфолио Артема Выдро</h2>
         </div>
-        <div class="welcome__button-projects">
+        <div class="welcome__button-projects" onclick="projectsOn()">
             РАБОТЫ
         </div>
     </div>
-    <div class="afterwelcome">
-        <div class="afterwelcome__cont"></div>
-    </div>
-    <div class="about">
-        <div class="about__logo">
-            О ПРОЕКТЕ
-        </div>
-        <div class="about__text">
-            Данный проект создан для демонстрации возможностей автора. В каждую работу
-            вложено много сил и труда. Если вам понравились работы, то вы можете написать в вк или инстаграм
-        </div>
-
-        <div class="about__lines"></div>
-    </div>
     <div class="projects">
-        <div class="projects__back">
-            <img src="img/projects.png" alt="">
-        </div>
         <div class="projects__mainlogo">
             РАБОТЫ
         </div>
         <div class="projects__gallery">
-            <h1 onclick="logo()">LOGO</h1>
-            <h1 onclick="youtube()">YouTube</h1>
+            <h1 onclick="logo()">LOGO</h1> <p></p>
+            <h1 onclick="youtube()">YouTube</h1> <p></p>
             <h1 onclick="web()">WEB</h1>
         </div>
         <div class="projects__logo">
             <div class="logo__exit"><h1 onclick="logoExit()">X</h1></div>
             <div class="logo__all">
-                    <div class="all__items"><img src="img/minitem1.png" onmouseover="logoItem1On()"></div>
-                    <div class="all__items"><img src="img/minitem2.png" onmouseover="logoItem2On()"></div>
-                    <div class="all__items"><img src="img/minitem3.png" onmouseover="logoItem3On()"></div>
-                    <div class="all__items"><img src="img/minitem4.png" onmouseover="logoItem4On()"></div>
+                <div class="all__items"><img src="logoitems/item1min.png" onmouseover="logoItem1On()"></div>
+                <div class="all__items"><img src="logoitems/item3min.png" onmouseover="logoItem3On()"></div>
+                <div class="all__items"><img src="logoitems/item4min.png" onmouseover="logoItem4On()"></div>
+                <div class="all__items"><img src="logoitems/item2min.png" onmouseover="logoItem2On()"></div>
+
             </div>
             <div class="logo__fullsize"></div>
         </div>
 
         <div class="projects__youtube">
-                <div class="youtube__exit"><h1 onclick="youtubeExit()">X</h1></div>
-                <div class="youtube__all">
-                </div>
-                <div class="youtube__fullsize"></div>
+            <div class="youtube__exit"><h1 onclick="youtubeExit()">X</h1></div>
+            <div class="youtube__all">
+
             </div>
-            <div class="projects__web">
-                    <div class="web__exit"><h1 onclick="webExit()">X</h1></div>
-                    <div class="web__all">
-                    </div>
-                    <div class="web__fullsize"></div>
-                </div>
+            <div class="youtube__fullsize"></div>
+        </div>
+
+        <div class="projects__web">
+            <div class="web__exit"><h1 onclick="webExit()">X</h1></div>
+            <div class="web__all">
+
+            </div>
+            <div class="web__fullsize"></div>
+        </div>
     </div>
 </body>
 <script src="js/main.js"></script>
