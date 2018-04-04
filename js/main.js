@@ -44,6 +44,11 @@ function goToHome(){
         $(".projects").css("display","none");
     }, 501);
 
+    $(".about").animate({'opacity':'0'},500)
+    setTimeout(() => {
+        $(".about").css("display","none");
+    }, 501);
+
     $(".welcome").css("display","block");
     setTimeout(() => {
         $(".welcome").animate({'opacity':'1'},500)
@@ -51,7 +56,29 @@ function goToHome(){
 }
 
 
+function aboutOn(){
 
+    $(".bar__welcome").css('opacity','0')
+    $(".bar__about").css('opacity','1')
+    $(".bar__projects").css('opacity','0')
+
+    $(".welcome").animate({'opacity':'0'},500)
+    setTimeout(() => {
+        $(".welcome").css("display","none");
+    }, 501);
+
+    $(".projects").animate({'opacity':'0'},500)
+    setTimeout(() => {
+        $(".projects").css("display","none");
+    }, 501);
+
+    $(".about").css("display","block");
+    setTimeout(() => {
+        $(".about").animate({'opacity':'1'},500)
+    }, 1);
+
+
+}
 
 function projectsOn(){
 
