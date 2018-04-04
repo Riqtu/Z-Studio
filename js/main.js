@@ -38,6 +38,7 @@ function goToHome(){
     $(".bar__welcome").css('opacity','1')
     $(".bar__about").css('opacity','0')
     $(".bar__projects").css('opacity','0')
+    $(".bar__cont").css('opacity','0')
 
     $(".projects").animate({'opacity':'0'},500)
     setTimeout(() => {
@@ -47,6 +48,11 @@ function goToHome(){
     $(".about").animate({'opacity':'0'},500)
     setTimeout(() => {
         $(".about").css("display","none");
+    }, 501);
+
+    $(".contacts").animate({'opacity':'0'},500)
+    setTimeout(() => {
+        $(".contacts").css("display","none");
     }, 501);
 
     $(".welcome").css("display","block");
@@ -61,6 +67,7 @@ function aboutOn(){
     $(".bar__welcome").css('opacity','0')
     $(".bar__about").css('opacity','1')
     $(".bar__projects").css('opacity','0')
+    $(".bar__cont").css('opacity','0')
 
     $(".welcome").animate({'opacity':'0'},500)
     setTimeout(() => {
@@ -84,7 +91,9 @@ function projectsOn(){
 
     $(".bar__welcome").css('opacity','0')
     $(".bar__about").css('opacity','0')
+    $(".bar__cont").css('opacity','0')
     $(".bar__projects").css('opacity','1')
+
 
     $(".welcome").animate({'opacity':'0'},500)
     setTimeout(() => {
@@ -98,7 +107,22 @@ function projectsOn(){
 
 }
 
+function contactsOn(){
+    $(".bar__welcome").css('opacity','0')
+    $(".bar__about").css('opacity','0')
+    $(".bar__projects").css('opacity','0')
+    $(".bar__cont").css('opacity','1')
 
+    $(".welcome").animate({'opacity':'0'},500)
+    setTimeout(() => {
+        $(".welcome").css("display","none");
+    }, 501);
+
+    $(".contacts").css("display","block");
+    setTimeout(() => {
+        $(".contacts").animate({'opacity':'1'},500)
+    }, 1);
+}
 
 function logo(){
     $(".projects__logo").css("display","block");

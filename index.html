@@ -50,9 +50,9 @@
             <img src="img/menu-button-off.svg" alt="" onclick="menuoff()">
         </div>
         <h1 onclick="goToHome();menuoff()">ГЛАВНАЯ</h1>
-        <h1 onclick="aboutOn();menuoff(); logoExit()">О ПРОЕКТЕ</h1>
+        <h1 onclick="aboutOn();menuoff()">О ПРОЕКТЕ</h1>
         <h1 onclick="projectsOn();menuoff()">РАБОТЫ</h1>
-        <h1>КОНТАКТЫ</h1>
+        <h1 onclick="contactsOn();menuoff()">КОНТАКТЫ</h1>
     </div>
     <div class="bar">
         <div class="bar__logo">
@@ -65,6 +65,7 @@
         <div class="bar__welcome"><h1>ГЛАВНАЯ</h1></div>
         <div class="bar__about"><h1>О&nbsp;ПРОЕКТЕ</h1></div>
         <div class="bar__projects"><h1>РАБОТЫ</h1></div>
+        <div class="bar__cont"><h1>КОНТАКТЫ</h1></div>
     </div>
     <div class="welcome">
         <video loop muted autoplay poster="video/Aloha-Mundo.jpg" class="welcome__video">
@@ -91,7 +92,7 @@
         <div class="about__logo">О ПРОЕКТЕ</div>
         <div class="about__text">
             Данный проект разрабатывался исключительно для демонтстрации возможностей автора.
-            Если вам понравилось и нужен красивый и креативный дизайн/проект/сайт, то милости прошу в вк или инстаграм.
+            Если вам понравилось и нужен красивый и креативный дизайн/проект/сайт, то свяжитесь со мной в вк или инстаграм.
             
         </div>
     </div>
@@ -118,8 +119,6 @@
                 <div class="all__items"><img src="logoitems/item1min.png" onmouseover="logoItem1On()"></div>
                 <div class="all__items"><img src="logoitems/item3min.png" onmouseover="logoItem3On()"></div>
                 <div class="all__items"><img src="logoitems/item4min.png" onmouseover="logoItem4On()"></div>
-                <div class="all__items"><img src="logoitems/item2min.png" onmouseover="logoItem2On()"></div>
-
             </div>
             <div class="logo__fullsize"></div>
         </div>
@@ -138,6 +137,15 @@
 
             </div>
             <div class="web__fullsize"></div>
+        </div>
+    
+    </div>
+
+
+    <div class="contacts">
+        <div class="contacts__area">
+            <img src="img/instagram.svg" alt="">
+            <img src="img/vk.svg" alt="">
         </div>
     </div>
 </body>
