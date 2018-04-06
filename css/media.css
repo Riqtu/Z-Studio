@@ -1,0 +1,408 @@
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1920px){
+    .welcome h1{
+        font-size: 150pt;
+    }
+    .welcome h2{
+        font-size: 38pt;
+        width: 1200px;
+    }
+    .backline{
+        top:-100px;
+        left: 1300px;
+    }
+    .welcome__button-projects{
+        width: 540px;
+        height: 130px;
+        font-size: 38pt;
+        top:350px;
+    }
+    .lines{
+        width: 960px;
+        height: 1800px;
+        left: 550px;
+        top: -360px;
+    }
+    .about__text{
+        left: 600px;
+        top: 330px;
+        right: 380px;
+    }
+    .pbackline{
+        top:-70px;
+    }
+    .projects__gallery{
+        top: 360px;
+        left: 80px;
+    }
+    .contacts__area img{
+        margin-left: 120px;
+    }
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1366px){
+    .welcome h1{
+        font-size: 100pt;
+    }
+    .welcome h2{
+        font-size: 32pt;
+        width: 1000px;
+    }
+    .backline{
+        top:-190px;
+        left: 950px;
+    }
+    .welcome__button-projects{
+        width: 440px;
+        height: 100px;
+        top:260px;
+        font-size: 30pt;
+    }
+    .lines{
+        width: 960px;
+        height: 1800px;
+        left: 550px;
+        top: -360px;
+    }
+    .about__logo{
+        font-size: 70pt;
+    }
+    .about__text{
+        left: 480px;
+        top: 230px;
+        right: 0;
+        font-size: 27pt;
+    }
+    .pbackline{
+        top:-70px;
+    }
+    .projects__mainlogo{
+        font-size: 70pt;
+    }
+    .projects__gallery{
+        top: 250px;
+        left: 40px;
+    }
+    .projects__gallery h1{
+        font-size: 70pt;
+    }
+    .contacts__area img{
+        width: 240px;
+        margin-left: 80px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 800px){
+    
+    .novigation h1{
+        font-size: 60pt;
+    }
+    .welcome h1{
+        font-size: 60pt;
+    }
+    .welcome h2{
+        font-size: 18pt;
+        width: 400px;
+    }
+    .backline{
+        top:-190px;
+        left: 450px;
+    }
+    .welcome__button-projects{
+        width: 270px;
+        height: 70px;
+        top:200px;
+        margin-left: 120px;
+        font-size: 25pt;
+    }
+    .welcome__video{
+        position: absolute;
+        width: 140%;
+        height: 100vh;
+    }
+    .lines{
+        width: 960px;
+        height: 1800px;
+        left: 350px;
+        top: -360px;
+    }
+    .about__logo{
+        font-size: 50pt;
+    }
+    .about__text{
+        left: 180px;
+        top: 230px;
+        right: 0;
+        font-size: 15pt;
+    }
+    .pbackline{
+        top:-70px;
+    }
+    .projects__mainlogo{
+        font-size: 50pt;
+    }
+    .projects__gallery{
+        top: 190px;
+        left: 40px;
+    }
+    .projects__gallery h1{
+        font-size: 50pt;
+    }
+    .all__items img{
+        width: 200px;
+        opacity: 0.8;
+    }
+    .contacts__area img{
+        width: 130px;
+        margin-left: 70px;
+    }
+    .contacts__text{
+        font-size: 20pt;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 736px){
+    .menu img{
+        width: 43px;
+    }
+    .menu{
+        position: fixed;
+        width: 50px;
+        height: 40px;
+        z-index: 120;
+        top: 60px;
+        right: 20px;
+        display: grid;
+        justify-content: end;
+    }
+    .novigation__exit{
+        position: fixed;
+        width: 100%;
+        height: 40px;
+        z-index: 121;
+        top: 60px;
+        right: 20px;
+    }
+    .novigation h1{
+        font-size: 40pt;
+    }
+    .novigation{
+        position: fixed;
+        width: 100%;
+        left: 0;
+        height: 100%;
+        z-index: 121;
+        opacity: 0;
+        display: none;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    
+    }
+    .novigation__exit img{
+        width: 43px;
+    }
+    .bar{
+        position: fixed;
+        width: 100%;
+        height: 45px;
+        background: rgb(41, 41, 41);
+        z-index: 1000;
+    }
+    .bar__logo{
+        position: fixed;
+        width: 100%;
+        height: 40px;
+        display: grid;
+        justify-content: start;
+        top:5px;
+        left: 8px;
+        cursor: pointer;
+        z-index: 999;
+        
+    }
+    .bar__logo img{
+        width: 30px;
+        opacity: 0.7;
+    }
+    .bar__contacts{
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        display: block;
+        text-align: right;
+        float: left;
+        z-index: 130;
+        top: 5px;
+        right: 6px;
+    }
+    .bar__contacts img{
+        width: 30px;
+        margin: 3px;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+    .bar__contacts img:hover{
+        opacity: 1;
+    }
+    .bar h1{
+        font-size: 20pt;
+        font-weight: 300;
+        color: white;
+        opacity: 0.5;
+        transform: rotate(0deg);
+    }
+
+    .welcome__video{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        display: none;
+    }
+    .welcome__backphone{
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background-image: url('../img/backphone.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .welcome__overlay{
+        width: 100%;
+        left: 0;
+    }
+    .welcome__text{
+        position: relative;
+        color: white;
+        top:130px;
+        left:10px;
+        z-index: 50;
+    }
+    .welcome__button-projects{
+        position: relative;
+        background: rgba(73, 73, 73, 0.822);
+        top:260px;
+        margin-left: 70px;
+    }
+    .about{
+        position: absolute;
+        width: calc(100vw - 90px);
+        left: 90px;
+        height: 100%;
+        background: url("../img/aboutback.jpg") ;
+        background-position: center;
+        background-size: cover;
+        display: none;
+        opacity: 0;
+    }
+    .about{
+        position: absolute;
+        width: 100%;
+        left: 0;
+    }
+    .about__logo{
+        position: absolute;
+        left: 17px;
+        top:110px;
+        color:white;
+        font-size: 30pt;
+        font-weight: 700;
+    }
+    .about__text{
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-size: 20pt;
+        left: 17px;
+        right: 17px;
+        top: 200px;
+    }
+    .lines{
+        overflow: hidden;
+        position: absolute;
+        width: 860px;
+        height: 1400px;
+        left: 0px;
+        top: -300px;
+        background: rgba(0, 0, 0, 0.575);
+        transform: rotate(-30deg);
+    }
+    .projects{
+        width: 100%;
+        left: 0;
+    }
+    .pbackline{
+        top:-70px;
+    }
+    .projects__mainlogo{
+        font-size: 50pt;
+        top:110px;
+    }
+    .projects__gallery{
+        top: 300px;
+        left: 40px;
+    }
+    .projects__gallery h1{
+        font-size: 50pt;
+    }
+    .logo__exit, .youtube__exit, .web__exit{
+        position: absolute;
+        width: 50px;
+        left: calc(100vw - 112px);
+        height: 79px;
+        display: grid;
+        z-index: 124;
+        justify-content: start;
+        align-content: end;
+        top: 31px;
+    }
+    .logo__exit h1, .youtube__exit h1, .web__exit h1{
+        color: white;
+        font-size: 36pt;
+        font-weight: 700;
+        opacity: 0.6;
+        cursor: pointer;
+        transition:0.3s;
+    }
+    .logo__all, .youtube__all, .web__all{
+        overflow-y: auto;
+        overflow-x: hidden;
+        position: absolute;
+        width: 100%;
+        background: rgb(19, 19, 19);
+        height: caclc(100vh - 45px);
+        text-align: center;
+        display: grid;
+        justify-content: center;
+    }
+    .logo__fullsize, .youtube__fullsize, .web__fullsize{
+        display: none;
+    }
+    .all__items img{
+        width: 100%;
+        opacity: 0.8;
+    }
+    .contacts{
+        width: 100%;
+        left: 0;
+    }
+    .contacts__area img{
+        width: 80px;
+        margin-left: 40px;
+        grid-template-columns: 1fr;
+    }
+    .contacts__text{
+        top: 110px;
+        font-size: 15pt;
+    }
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px){
+
+}

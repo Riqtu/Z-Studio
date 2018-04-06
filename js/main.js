@@ -113,6 +113,11 @@ function contactsOn(){
     $(".bar__projects").css('opacity','0')
     $(".bar__cont").css('opacity','1')
 
+    $(".projects").animate({'opacity':'0'},500)
+    setTimeout(() => {
+        $(".projects").css("display","none");
+    }, 501);
+
     $(".welcome").animate({'opacity':'0'},500)
     setTimeout(() => {
         $(".welcome").css("display","none");
