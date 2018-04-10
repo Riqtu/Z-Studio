@@ -2,17 +2,20 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1920px){
+@media only screen and (max-width : 1920px) and (min-width : 1441px){
     .welcome h1{
-        font-size: 150pt;
+        font-size: 100pt;
     }
     .welcome h2{
-        font-size: 38pt;
+        font-size: 30pt;
         width: 1200px;
     }
     .backline{
         top:-100px;
         left: 1300px;
+    }
+    .welcome__video{
+        width: 100%;
     }
     .welcome__button-projects{
         width: 540px;
@@ -41,6 +44,7 @@
     .contacts__area img{
         margin-left: 120px;
     }
+} 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1366px){
     .welcome h1{
@@ -49,6 +53,9 @@
     .welcome h2{
         font-size: 32pt;
         width: 1000px;
+    }
+    .welcome__video{
+        width: 140%;
     }
     .backline{
         top:-190px;
@@ -96,7 +103,6 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 800px){
-    
     .novigation h1{
         font-size: 60pt;
     }
@@ -210,6 +216,7 @@
         position: fixed;
         width: 100%;
         height: 45px;
+        min-height: 45px;
         background: rgb(41, 41, 41);
         z-index: 1000;
     }
@@ -279,15 +286,16 @@
     .welcome__text{
         position: relative;
         color: white;
-        top:130px;
-        left:10px;
+        top:140px;
+        left:0px;
         z-index: 50;
+        text-align: center;
     }
     .welcome__button-projects{
         position: relative;
         background: rgba(73, 73, 73, 0.822);
         top:260px;
-        margin-left: 70px;
+        margin-left: calc(50vw - 135px);
     }
     .about{
         position: absolute;
@@ -326,7 +334,7 @@
         position: absolute;
         width: 860px;
         height: 1400px;
-        left: 0px;
+        left: -50px;
         top: -300px;
         background: rgba(0, 0, 0, 0.575);
         transform: rotate(-30deg);
@@ -403,6 +411,121 @@
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px){
+@media only screen and (max-width : 380px){
+    .welcome h1{
+        font-size: 45pt;
+    }
+    .welcome h2{
+        font-size: 15pt;
+        margin-left: 0;
+        width: 100%;
+    }
+    .backline{
+        top:-100px;
+        left: 170px;
+    }
+    .about__logo{
+        font-size: 18pt;
+    }
+    .about__text{
+        top: 140px;
+        font-size: 18pt;
+    }
+    .pbackline{
+        top:-70px;
+    }
+    .projects__gallery{
+        top: 240px;
+        left: 20px;
+    }
+    .contacts__area img{
+        margin-left: 20px;
+    }
+}
 
+@media only screen and (max-width : 320px){
+    .bar h1{
+        font-size: 17pt;
+    }
+    .novigation h1{
+        font-size: 30pt;
+    }
+    .welcome h1{
+        font-size: 40pt;
+    }
+    .welcome h2{
+        font-size: 13pt;
+        margin-left: 0;
+        width: 100%;
+    }
+    .backline{
+        top:-100px;
+        left: 170px;
+    }
+    .about__logo{
+        font-size: 16pt;
+    }
+    .about__text{
+        top: 140px;
+        font-size: 16pt;
+    }
+    .pbackline{
+        top:-70px;
+    }
+    .projects__mainlogo{
+        font-size: 35pt;
+        top:110px;
+    }
+    .projects__gallery{
+        top: 300px;
+        left: 40px;
+    }
+    .projects__gallery h1{
+        font-size: 35pt;
+    }
+    .projects__gallery{
+        top: 240px;
+        left: 20px;
+    }
+    .contacts__area img{
+        width: 60px;
+        margin-left: 30px;
+    }
+    .bar{
+        position: fixed;
+        width: 100%;
+        height: 40px;
+        background: rgb(41, 41, 41);
+        z-index: 1000;
+    }
+    .bar__logo{
+        position: fixed;
+        width: 100%;
+        height: 40px;
+        display: grid;
+        justify-content: start;
+        top:5px;
+        left: 8px;
+        cursor: pointer;
+        z-index: 999;
+        
+    }
+    .bar__logo img{
+        width: 25px;
+        opacity: 0.7;
+    }
+    .bar__contacts{
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        display: block;
+        text-align: right;
+        float: left;
+        z-index: 130;
+        top: 5px;
+        right: 6px;
+    }
+    .bar__contacts img{
+        width: 25px;
+    }
 }
