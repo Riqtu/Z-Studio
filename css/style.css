@@ -37,7 +37,7 @@ body{
     position: fixed;
     width: 33%;
     height: 100%;
-    min-height: 720px;
+
     top:-100%;
     background: white;
     z-index: 101;
@@ -48,7 +48,6 @@ body{
     width: 33%;
     left: 33%;
     height: 100%;
-    min-height: 720px;
     top: 100%;
     background: white;
     z-index: 101;
@@ -60,7 +59,6 @@ body{
     width: 34%;
     left: 66%;
     height: 100%;
-    min-height: 720px;
     top: -100%;
     background: white;
     z-index: 101;
