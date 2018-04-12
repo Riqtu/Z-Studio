@@ -2,7 +2,7 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1920px) and (min-width : 1441px){
+@media only screen and (max-width : 1920px) and (min-width : 1690px){
     .welcome h1{
         font-size: 100pt;
     }
@@ -15,7 +15,7 @@
         left: 1300px;
     }
     .welcome__video{
-        width: 100%;
+        width: 110%;
     }
     .welcome__button-projects{
         width: 540px;
@@ -45,6 +45,19 @@
         margin-left: 120px;
     }
 } 
+@media only screen and (max-width : 1690px) and (min-width : 1441px){
+    .about__text{
+        left: 630px;
+        top: 240px;
+        right: 270px;
+        font-size: 26pt;
+    }
+    .lines{
+        height: 2000px;
+        top: -350px;
+        left: 650px;
+    }
+}
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1366px){
     .welcome h1{
@@ -58,7 +71,7 @@
         width: 140%;
     }
     .backline{
-        top:-190px;
+        top:-140px;
         left: 950px;
     }
     .welcome__button-projects{
@@ -100,9 +113,29 @@
         margin-left: 80px;
     }
 }
+@media only screen and (max-width : 1200px){
+    .lines{
+        left: 320px;
+        top: -330px;
 
+    }
+}
+@media only screen and (max-width : 1112px){
+    .about__text{
+        top: 200px;
+        left: 240px;
+    }
+    .contacts__area img{
+        width: 130px;
+        margin-left: 70px;
+    }
+    .contacts__text{
+        font-size: 20pt;
+    }
+
+}
 /* Small Devices, Tablets */
-@media only screen and (max-width : 800px){
+@media only screen and (max-width : 940px){
     .novigation h1{
         font-size: 60pt;
     }
@@ -126,8 +159,7 @@
     }
     .welcome__video{
         position: absolute;
-        width: 140%;
-        height: 100vh;
+        width: 170%;
     }
     .lines{
         width: 960px;
@@ -201,6 +233,7 @@
         width: 100%;
         left: 0;
         height: 100%;
+        min-height: 220px;
         z-index: 121;
         opacity: 0;
         display: none;
@@ -221,8 +254,7 @@
         z-index: 1000;
     }
     .bar__logo{
-        position: fixed;
-        width: 100%;
+        width: 100px;
         height: 40px;
         display: grid;
         justify-content: start;
@@ -265,9 +297,6 @@
     }
 
     .welcome__video{
-        position: absolute;
-        width: 100%;
-        height: 100vh;
         display: none;
     }
     .welcome__backphone{
@@ -302,6 +331,7 @@
         width: calc(100vw - 90px);
         left: 90px;
         height: 100%;
+        min-height: 220px;
         background: url("../img/aboutback.jpg") ;
         background-position: center;
         background-size: cover;
@@ -342,6 +372,7 @@
     .projects{
         width: 100%;
         left: 0;
+        min-height: 220px;
     }
     .pbackline{
         top:-70px;
@@ -397,6 +428,7 @@
     .contacts{
         width: 100%;
         left: 0;
+        min-height: 220px;
     }
     .contacts__area img{
         width: 80px;
