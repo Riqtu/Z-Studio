@@ -427,6 +427,7 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    z-index: 6;
 }
 
 .youtube__exit h1:hover{
@@ -434,6 +435,22 @@ body{
 }
 .web__exit h1:hover{
     opacity: 1;
+}
+.web__zgl,.youtube__zgl{
+    position: absolute;
+    width: 30%;
+    background: rgb(19, 19, 19);
+    height: 50px;
+}
+.web__all,.youtube__all{
+    margin-top: 50px;
+}
+.web__back{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    left: 30%;
+    background: #e8e8e8;
 }
 
 .contacts{
